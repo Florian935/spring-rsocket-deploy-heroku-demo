@@ -3,7 +3,6 @@ spring:
     server:
       mapping-path: /rsocket
       port: 7000
-#      transport: websocket
-      transport: tcp
+      transport: websocket
 server:
   port: ${PORT:8080}
