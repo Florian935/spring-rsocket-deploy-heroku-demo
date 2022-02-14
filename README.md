@@ -23,5 +23,8 @@ defined by Heroku container.
 We define in this project the RSocket port to 7000. Heroku use load balancing. Because
 of that, we have to set a ___mapping-path (/rsocket)___ in the ```application.yml file```.
 Thanks to that, when we call ___wss://YOUR_APP_NAME.herokuapp.com/rsocket___, the mapping of
-the port 7000 is automatically done.
+the port 7000 is automatically done to the ___/rsocket___ path.
+Also, it's appear that Heroku only support ___websocket transport___ and not
+___TCP___ transport. This is why in ___application.yml___ file we define
+___transport___ to **websocket**.
 
