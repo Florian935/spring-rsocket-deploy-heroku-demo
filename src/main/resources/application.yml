@@ -1,6 +1,7 @@
 spring:
   rsocket:
     server:
+      mapping-path: /ws
       port: 7000
       transport: websocket
 server:

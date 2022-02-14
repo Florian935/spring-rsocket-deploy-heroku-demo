@@ -10,7 +10,6 @@ public class RSocketController {
     @MessageMapping("request-response")
     Mono<String> requestResponse() {
         System.out.println("================ PASSAGE ================");
-
         return Mono.just("Hello World !");
     }
 }
