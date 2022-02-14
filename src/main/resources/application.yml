@@ -2,6 +2,6 @@ spring:
   rsocket:
     server:
       port: 7000
-      transport: websocket
+      transport: tcp
 server:
   port: ${PORT:8080}
