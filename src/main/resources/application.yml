@@ -3,3 +3,5 @@ spring:
     server:
       port: 7000
       transport: websocket
+server:
+  port: ${PORT:8080}
